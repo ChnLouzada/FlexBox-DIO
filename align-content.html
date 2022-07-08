@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fundamentos - align-items</title>
+    <style>
+      .container{
+        height: 400px;
+        max-width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid black;
+      }
+
+      .item{
+        background-color: orangered;
+        padding: 0 5px;
+        flex: 1;
+        margin: 5px;
+        text-align: center;
+        color:white;
+        border: 2px solid black;
+      }
+
+      .stretch{
+        align-content: stretch;
+      }
+
+      .center{
+        align-content: center;
+      }
+
+      .flex-start{
+        align-content: flex-start;
+      }
+
+      .flex-end{
+        align-content: flex-end;
+      }
+
+      .space-arround{
+        align-content: space-around;
+      }
+
+      .space-between{
+        align-content: space-between;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p>Stretch</p>
+    <div class="container stretch">
+      <div class="item">item 1item 1 item item 1</div>
+      <div class="item">Lorem ipsum dolor sect</div>
+      <div class="item">item 3 mais algum texto</div> 
+      <div class="item">item 1item 1 item 1 item 1</div>
+      <div class="item">Lorem ipsum dolor sectem ipsum dolor secem ipsum dolor </div>
+      <div class="item">item 3 mais algum texto</div> 
+      <div class="item">item 3 mais algum texto</div> 
+    </div>
+
+    <p>Center</p>
+    <div class="container center">
+      <div class="item">item 1item 1 item item 1</div>
+      <div class="item">Lorem ipsum dolor sect</div>
+      <div class="item">item 3 mais algum texto</div> 
+      <div class="item">item 1item 1 item 1 item 1</div>
+      <div class="item">Lorem ipsum dolor sectem ipsum dolor secem ipsum dolor </div>
+      <div class="item">item 3 mais algum texto</div> 
+      <div class="item">item 3 mais algum texto</div> 
+    </div>
+
+    <p>Flex-start</p>
+    <div class="container flex-start">
+      <div class="item">item 1item 1 item item 1</div>
+      <div class="item">Lorem ipsum dolor sect</div>
+      <div class="item">item 3 mais algum texto</div> 
+      <div class="item">item 1item 1 item 1 item 1</div>
+      <div class="item">Lorem ipsum dolorpsum dolor sece</div>
+      <div class="item">item 3 mais algum texto</div> 
+      <div class="item">item 3 mais algum texto</div> 
+    </div>
+
+    <p>Flex-end</p>
+    <div class="container flex-end">
+      <div class="item">item 1item 1 item item 1</div>
+      <div class="item">Lorem ipsum dolor sect</div>
+      <div class="item">item 3 mais algum texto</div> 
+      <div class="item">item 1item 1 item 1 item 1</div>
+      <div class="item">Lorem ipsum dolorpsum dolor sece</div>
+      <div class="item">item 3 mais algum texto</div> 
+      <div class="item">item 3 mais algum texto</div> 
+    </div>
+
+    <p>Space-arround</p>
+    <div class="container space-arround">
+      <div class="item">item 1item 1 item item 1</div>
+      <div class="item">Lorem ipsum dolor sect</div>
+      <div class="item">item 3 mais algum texto</div> 
+      <div class="item">item 1item 1 item 1 item 1</div>
+      <div class="item">Lorem ipsum dolorpsum dolor sece</div>
+      <div class="item">item 3 mais algum texto</div> 
+      <div class="item">item 3 mais algum texto</div> 
+    </div>
+
+    <p>Space-between</p>
+    <div class="container space-between">
+      <div class="item">item 1item 1 item item 1</div>
+      <div class="item">Lorem ipsum dolor sect</div>
+      <div class="item">item 3 mais algum texto</div> 
+      <div class="item">item 1item 1 item 1 item 1</div>
+      <div class="item">Lorem ipsum dolorpsum dolor sece</div>
+      <div class="item">item 3 mais algum texto</div> 
+      <div class="item">item 3 mais algum texto</div> 
+    </div>
+  
+  </body>
+</html>
